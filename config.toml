@@ -13,12 +13,19 @@ pygmentsUseClasses = true
   highlight = true
 
 [menu]
-    # [[menu.main]]
-    #  identifier = "RSS"
-    #  name = "RSS"
-    #  title = "RSS"
-    #  url = "/RSS/"
-    #  weight = 10
+  [[menu.main]]
+    identifier = "Twitter"
+    name = "Twitter"
+    title = "Twitter"
+    url = "https://twitter.com/jackdbai"
+    weight = 10
+
+    [[menu.main]]
+     identifier = "RSS"
+     name = "RSS"
+     title = "RSS"
+     url = "/RSS/"
+     weight = 20
 
 [permalinks]
   posts = "/:title/"
