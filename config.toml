@@ -6,26 +6,29 @@ enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+[author]
+    name = "Jack"
+
 [params]
   description = "Ramblings, thoughts, etc."
   copyright = "Copyright © 2022 Jack"
   dark = "on"
   highlight = true
 
-# [menu]
-#   [[menu.main]]
-#     identifier = "Twitter"
-#     name = "Twitter"
-#     title = "Twitter"
-#     url = "https://twitter.com/jackdbai"
-#     weight = 10
-#
-#     [[menu.main]]
-#      identifier = "RSS"
-#      name = "RSS"
-#      title = "RSS"
-#      url = "/RSS/"
-#      weight = 20
+[menu]
+    [[menu.main]]
+     identifier = "RSS"
+     name = "RSS"
+     title = "RSS"
+     url = "/index.xml"
+     weight = 10
+     # 
+     # [[menu.main]]
+     #   identifier = "Twitter"
+     #   name = "Twitter"
+     #   title = "Twitter"
+     #   url = "https://twitter.com/jackdbai"
+     #   weight = 20
 
 [permalinks]
   posts = "/:title/"
