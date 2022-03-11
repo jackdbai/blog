@@ -6,9 +6,6 @@ enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
-[author]
-    name = "Jack"
-
 [params]
   description = "Ramblings, thoughts, etc."
   copyright = "Copyright © 2022 Jack"
@@ -22,7 +19,7 @@ pygmentsUseClasses = true
      title = "RSS"
      url = "/index.xml"
      weight = 10
-     # 
+     #
      # [[menu.main]]
      #   identifier = "Twitter"
      #   name = "Twitter"
