@@ -1,0 +1,20 @@
+<header>
+	<nav>
+		<ul class="main">
+			<li><a href="https://blog.jackdbai.dev">{{ .Site.Title }}</a></li>
+		</ul>
+		<ul class="social">
+			{{ with .OutputFormats.Get "RSS" }}
+			<li>
+ 				<a href="{{ .RelPermalink }}" title="RSS Feed" class="fa fa-rss" target="_blank"></a>
+ 			</li>
+			{{ end }}
+			<li>
+				<a class="fa fa-github" title="GitHub" href="https://github.com/jackdbai" target="_blank"></a>
+			</li>
+			<li>
+				<a class="fa fa-twitter" title="Twitter" href="https://twitter.com/jackdbai" target="_blank"></a>
+			</li>
+		</ul>
+	</nav>
+</header>

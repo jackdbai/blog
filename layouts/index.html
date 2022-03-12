@@ -1,0 +1,38 @@
+{{ partial "header.html" . }}
+
+<div class="container home">
+
+    {{ partial "navbar.html" . }}
+
+    <!-- <h1>Posts</h1> -->
+
+    <!-- <h2>Featured</h2>
+    {{ range .Site.Pages.ByDate.Reverse }}
+    {{ if .Params.featured }}
+    <article>
+        <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
+        <div class="time">{{ .ReadingTime }} min read</div>
+        <p>{{ .Description }}</p>
+    </article>
+    {{ end }}
+    {{ end }} -->
+
+    <hr/>
+
+    {{ range .Site.Pages.ByDate.Reverse }}
+    {{ if not .Params.featured }}
+    {{ if ne .Title "Posts" }}
+    {{ if ne .Title "Master of None" }}
+    <article>
+        <h3><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h3>
+        <div class="time">{{ .Date.Format "Monday, January 2, 2006" }} · {{ .ReadingTime }} min read</div>
+        <!-- <div class="time">{{ .Date.Format "Monday, January 2, 2006" }}</div> -->
+        <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+    {{ end }}
+</div>
+
+{{ partial "footer.html" . }}

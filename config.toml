@@ -1,35 +1,11 @@
-baseURL = "https://blog.jackdbai.dev"
+baseurl = "https://blog.jackdbai.dev/"
+canonifyUrls = true
+languageCode = "en-us"
 title = "Master of None"
-theme = "etch"
-languageCode = "en-US"
-enableInlineShortcodes = true
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
-  description = "Ramblings, thoughts, etc."
-  copyright = "Copyright © 2022 Jack"
-  dark = "on"
-  highlight = true
-
-[menu]
-    [[menu.main]]
-     identifier = "RSS"
-     name = "RSS"
-     title = "RSS"
-     url = "/index.xml"
-     weight = 10
-     #
-     # [[menu.main]]
-     #   identifier = "Twitter"
-     #   name = "Twitter"
-     #   title = "Twitter"
-     #   url = "https://twitter.com/jackdbai"
-     #   weight = 20
-
-[permalinks]
-  posts = "/:title/"
+	description = "Specialization is for insects."
 
 [markup.goldmark.renderer]
-  # Allows HTML in Markdown
-  unsafe = true
+unsafe= true
